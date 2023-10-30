@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './App.css';
 
 function ContactForm() {
   const [formData, setFormData] = useState({
@@ -6,7 +7,9 @@ function ContactForm() {
     apellidoPaterno: '',
     apellidoMaterno: '',
     direccion: '',
-    correo: ''
+    correo: '',
+    password: '',
+    Telefono: ''
   });
 
   const handleInputChange = (event) => {
@@ -24,30 +27,32 @@ function ContactForm() {
   };
 
   return (
-    <div>
-      <h1>Formulario de Contacto</h1>
+    <div className="App">
+      <header className="App-header">
+      <h1>Registro</h1>
       <form onSubmit={handleSubmit}>
       <img src="/logo.png" alt="Logo de carniceria" />
-        <label htmlFor="nombre">Nombre:</label>
-        <input type="text" id="nombre" name="nombre" value={formData.nombre} onChange={handleInputChange} required />
-
-        <label htmlFor="apellidoPaterno">Apellido Paterno:</label>
-        <input type="text" id="apellidoPaterno" name="apellidoPaterno" value={formData.apellidoPaterno} onChange={handleInputChange} required />
-
-        <label htmlFor="apellidoMaterno">Apellido Materno:</label>
-        <input type="text" id="apellidoMaterno" name="apellidoMaterno" value={formData.apellidoMaterno} onChange={handleInputChange} required />
-
-        <label htmlFor="direccion">Dirección:</label>
-        <input type="text" id="direccion" name="direccion" value={formData.direccion} onChange={handleInputChange} required />
-
-        <label htmlFor="correo">Correo Electrónico:</label>
-        <input type="email" id="correo" name="correo" value={formData.correo} onChange={handleInputChange} required />
         
-        <label htmlFor="Telefono">Telefono:</label>
-        <input type="tel" id="telefono" name="telefono" value={formData.correo} onChange={handleInputChange} required />
+        <input type="text" id="nombre" name="nombre" placeholder="Nombre" value={formData.nombre} onChange={handleInputChange} required />
+
+        
+        <input type="text" id="apellidoPaterno" name="apellidoPaterno" placeholder="Apellido Paterno" value={formData.apellidoPaterno} onChange={handleInputChange} required />
+
+        
+        <input type="text" id="apellidoMaterno" name="apellidoMaterno" placeholder="Apellido Materno" value={formData.apellidoMaterno} onChange={handleInputChange} required />
+
+        
+        <input type="text" id="direccion" name="direccion"  placeholder="Dirección" value={formData.direccion} onChange={handleInputChange} required />
+
+        
+        <input type="email" id="correo" name="correo"   placeholder="Email" value={formData.correo} onChange={handleInputChange} required />
+        <input type="Pass" id="Password" name="Password" placeholder="Password" value={formData.correo} onChange={handleInputChange} required />
+        
+        <input type="tel" id="telefono" name="telefono" placeholder="Telefono" value={formData.correo} onChange={handleInputChange} required />
 
         <button type="submit">Enviar</button>
       </form>
+      </header>
     </div>
   );
 }

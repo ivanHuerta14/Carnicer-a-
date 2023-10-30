@@ -1,20 +1,36 @@
-import React, { useState } from 'react';
-import './App.css';
+
 import CompanyHistory from './CompanyHistory';
 import ContactForm from './ContactForm';
-
+import Login from './Login';
+import './App.css';
+import Navbar from './Navbar';
+import './style.css';
 function App() {
-  const [showForm, setShowForm] = useState(false);
-
+  let component
+  switch (window.location.pathname){
+   case "/CompanyHistory":
+     component = <CompanyHistory />
+    break
+    case "/CompanyHistoria":
+    component = <CompanyHistory />
+     break
+     case "/Login":
+     component = <Login />
+    break
+     case "/ContactForm":
+    component= <ContactForm/>
+    break
+  }
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        {showForm ? <ContactForm /> : <CompanyHistory />}
-        <button onClick={() => setShowForm(!showForm)}>
-          {showForm ? 'Registrate' : 'inicio'}
-        </button>
-      </header>
-    </div>
+  
+  
+  <>
+  <Navbar />
+  {component}
+  
+  </>
+  
   );
 }
 

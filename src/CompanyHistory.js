@@ -1,8 +1,11 @@
 import React from 'react';
 
+import './App.css';
 function CompanyHistory() {
   return (
-    <div >
+    <div className="App">
+      
+      <header className="App-header">
       <h1>¿Quienes Somos?</h1>
       
       <img src="/logo.png" alt="Logo de carniceria" />
@@ -19,6 +22,9 @@ function CompanyHistory() {
             <p>
                 Agradecemos a nuestros clientes por su apoyo a lo largo de los años y esperamos seguir siendo tu elección número uno para tus necesidades de carne. Ven y visita "El Sabor de la Carne" hoy y descubre por qué somos la carnicería de confianza en nuestra comunidad.
             </p>
+            <br />
+           <br />
+           </header>
     </div>
     
   );

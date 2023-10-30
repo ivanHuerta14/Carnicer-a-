@@ -23,12 +23,22 @@ img{
 
 }
 
+.nav{
 
+  background-color: #333;
+  color:white;
+  display:flex;
+  justify-content: space-between;
+  align-items:stretch;
+  gap :2rem;
+  padding: 0 1rem;
+  
+}
 /* Estilos para el botón de envío */
 button {
   background-color: #007BFF;
   color: white;
-  font-size: 30px;
+  font-size: 20px;
   border: none;
   border-radius: 5px;
   padding: 10px 20px;
@@ -58,6 +68,8 @@ input {
   border: 2px solid #ccc;
   border-radius: 5px;
   margin: 10px 0;
+  width: 500px;
+  height:50px;
  
 }
 
@@ -66,3 +78,6 @@ input {
 button:hover {
   background-color: #0056b3;
 }
+
+
+
