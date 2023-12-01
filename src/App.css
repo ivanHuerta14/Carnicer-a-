@@ -20,6 +20,7 @@
 img{
   width: 600px;
   height: 400px;
+  
 
 }
 
@@ -34,8 +35,13 @@ img{
   padding: 0 1rem;
   
 }
+.logo-image {
+  width: 40px; /* ajusta el ancho según tus necesidades */
+  height: 40px; /* ajusta la altura según tus necesidades */
+  margin-right: 10px; /* ajusta el margen derecho según tus necesidades */
+}
 /* Estilos para el botón de envío */
-button {
+ button {
   background-color: #007BFF;
   color: white;
   font-size: 20px;
@@ -43,8 +49,8 @@ button {
   border-radius: 5px;
   padding: 10px 20px;
   cursor: pointer;
-  width:200px;
-  height: 50px;
+  width:100px;
+  height: 40px;
 }
 form {
   width: 600px;
@@ -60,7 +66,10 @@ label {
   display: block;
   margin-bottom: 50px;
 }
-
+search-bar { 
+  width:50px;
+  height: 40px;
+}
 input {
   width: 100%;
   padding: 8px;

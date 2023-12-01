@@ -1,0 +1,110 @@
+/* PurchaseSummary.css */
+.purchase-summary-contenedor {
+  background-color: black;
+  padding: 20px; /* Ajusta el espacio interno según sea necesario */
+  border-radius: 10px; /* Agrega esquinas redondeadas según sea necesario */
+  
+  
+  
+
+}
+
+.purchase-summary {
+    display: flex;
+    margin-bottom: 15px;
+    
+    
+  }
+  
+  .product-image {
+    width: 600px;
+    height: 400px;
+    object-fit: cover;
+    margin-right: 90px;
+  }
+  
+  .product-details {
+    flex-grow: 2;
+  }
+  .buy-button {
+    margin-top: 40px; /* Espaciado superior para separar el botón del contenido */
+    background-color: #db3490; /* Color de fondo del botón, puedes ajustarlo según tus preferencias */
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    position: absolute;
+    bottom: 450px;
+    left: 600px;
+  }
+ .borrar-button {
+    margin-top: 40px; /* Espaciado superior para separar el botón del contenido */
+    background-color: #db3490; /* Color de fondo del botón, puedes ajustarlo según tus preferencias */
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    position: absolute;
+    bottom: 450px;
+    right: 600px;
+  }
+  .regresar {
+    margin-top: 40px; /* Espaciado superior para separar el botón del contenido */
+    background-color: #db3490; /* Color de fondo del botón, puedes ajustarlo según tus preferencias */
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+  }
+  .contenedor {
+    width:100%;
+    max-width:1200px;
+    height:430px;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    margin:auto;
+    
+    
+    
+    
+    }
+    .contenedor .card{
+    
+    width:800px;
+    height:600px;
+    border-radius:8px;
+    box-shadow: 0 2px 2px rgba(0,0,0,0.2);
+    overflow:hidden;
+    margin:50px;
+    text-align:left;
+    transition:all 0.25s;
+    
+    
+    }
+        .contenedor .card:hover   {
+            transform:translateY(-15);  
+    box-shadow: 0 12px 16px rgba(0,0,0,0.2);
+        
+        }
+    
+        .contenedor .card img{
+            width: 400px;
+            height: 300px;   
+            padding: 30px;  
+                                         
+        }
+     
+        .contenedor .card .buy-button {
+          padding: 10px;
+        }
+       
