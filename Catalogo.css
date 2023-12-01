@@ -1,0 +1,48 @@
+/* Catalogo.css */
+
+.catalogo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  .producto {
+    width: 30%; /* Ancho de cada tarjeta de producto */
+    margin-bottom: 20px; /* Espaciado entre las tarjetas */
+  }
+
+.card .producto{
+    
+    width:400px;
+    height:400px;
+    border-radius:0px;
+    box-shadow: 0 2px 2px rgba(0,0,0,0.2);
+    overflow:hidden;
+    margin:10px;
+    text-align:center;
+    transition:all 0.25s;
+    align-items:center;
+    
+    
+    }
+     .card .producto:hover   {
+        transform:translateY(-15);  
+box-shadow: 0 12px 16px rgba(0,0,0,0.2);
+    
+    }
+
+     .card img{
+        width: 200px;
+        height:200px;   
+        padding: 20px;  
+                                     
+    }
+ 
+   .button {
+      padding: 10px;
+      width: 80px;
+      height: 45px; 
+      margin-top: 0px;
+
+    }
+   

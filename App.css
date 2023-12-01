@@ -1,0 +1,92 @@
+.App {
+  text-align: center;
+}
+
+.App {
+  color: blue;
+}
+
+
+.App-header {
+  background-color: #000000;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+img{
+  width: 600px;
+  height: 400px;
+  
+
+}
+
+.nav{
+
+  background-color: #333;
+  color:white;
+  display:flex;
+  justify-content: space-between;
+  align-items:stretch;
+  gap :2rem;
+  padding: 0 1rem;
+  
+}
+.logo-image {
+  width: 40px; /* ajusta el ancho según tus necesidades */
+  height: 40px; /* ajusta la altura según tus necesidades */
+  margin-right: 10px; /* ajusta el margen derecho según tus necesidades */
+}
+/* Estilos para el botón de envío */
+ button {
+  background-color: #007BFF;
+  color: white;
+  font-size: 20px;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  width:100px;
+  height: 40px;
+}
+form {
+  width: 600px;
+  margin: 0 auto;
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(131, 120, 120, 0.1);
+}
+
+/* Estilos para los campos de entrada */
+label {
+  display: block;
+  margin-bottom: 50px;
+}
+search-bar { 
+  width:50px;
+  height: 40px;
+}
+input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 15px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  margin: 10px 0;
+  width: 500px;
+  height:50px;
+ 
+}
+
+
+
+button:hover {
+  background-color: #0056b3;
+}
+
+
+
